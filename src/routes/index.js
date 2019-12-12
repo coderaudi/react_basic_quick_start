@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Switch, Route } from 'react-router-dom'
 
 import Dashboard from "./dashboard";
 import Contactus from './contactus';
@@ -10,10 +11,13 @@ class MainApp extends Component {
         return (
             <div>
 
-                <Dashboard />
-                <Contactus />
-                <Homepage />
 
+
+                <Switch>
+                    <Route exact path='/' component={Homepage} />
+                    <Route path='/contactus' component={Contactus} />
+                    <Route path='/dashboard' component={Dashboard} />
+                </Switch>
 
             </div>
         );
