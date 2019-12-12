@@ -5,7 +5,7 @@ class Header extends Component {
     render() {
         return (
             <div>
-                <div style={{ background: "green" }} >
+                <div style={{ background: "green", textAlign: "center" }} >
                     <h1>Happy Coding_Webheader</h1>
                     <hr />
 
